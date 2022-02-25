@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #008F8C, #015958);
+    background-repeat: no-repeat;
+    /*determinando a altura minima da pagina*/
+    min-height: 100vh;
+    /*determinando a largura minima da pagina*/
+    min-width: 100vh;
+    display: flex;
+    /*determinando que os itens irão ficar no centralizado*/
+    align-items: center;
+    /*agr estou alinhando ao centro do body*/
+    justify-content: center;
+}
+
+main{
+    background: white;
+    max-width: 20em;
+    min-height: 40vh;
+    padding: 2em;
+    /*um fundo levinho de tonalidade preta*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0.6em;
+}
+
+main h1{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+main h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 240px;
+    bottom: -5px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #008F8C, #015958);
+}
+
+/*aplicando todos os itens da lista em coluna*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.Caixas{
+    position: relative;
+}
+
+.Caixas label{
+    color: #023535;
+    font-weight: 500;
+}
+
+#genero{
+    outline: none;
+    font-size: 0.9em;
+    color: #023535;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.Caixas input::placeholder{
+    color: #02353569;
+}
+
+.botao{
+    margin-top: 0.6em;
+    padding: 0.4em;
+    background: #008F8C;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 0.3em;
+}
+
+.inputCinza{
+	
+	width: 100%;
+	outline: none;
+    font-size: 0.9em;
+    color: #023535;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	background-color: #e5e4e4;
+    border-radius: 3px;
+    padding: 0.4em;
+}

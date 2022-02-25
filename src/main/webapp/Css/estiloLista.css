@@ -1,0 +1,48 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quantico', sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg, #008F8C, #015958f1);
+    /*background-image: url('Img/NaOndaFundo.png');
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    /*determinando a altura minima da pagina*/
+    min-height: 100vh;
+    /*determinando a largura minima da pagina*/
+    min-width: 100vh;   
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+table{
+    /*border: black 2px solid;*/
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+table th{
+    border: black 1px solid;
+    padding: 10px;
+    background-color: #015958;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+}
+.botao{
+	
+	border-radius: 8px;
+	background-color: red;
+}

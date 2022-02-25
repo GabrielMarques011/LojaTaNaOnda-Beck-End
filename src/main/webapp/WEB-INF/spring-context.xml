@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.3.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<!--  FALANDO(DECLARANDO) AO SPRING O PACOTE BASE DA MINHA APLICAÇÃO -->
+	<context:component-scan base-package="com.br.matheusEgabriel.naonda"/>
+	<!--  HABILITA O MVC POR MEIO DE ANNOTATION -->
+	<mvc:annotation-driven />
+	
+	
+	<!--  -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"><!--  bean ESTANCIA DE UMA CLASSE, COMO SE FOSSE UM OBJ QUE ESTAMOS DE CLARANDO DE UMA CLASSE -->
+	<!--  precisamos declarar o sufixo e prefixos 
+		  prefixo as pastas ate os arquivo
+		  Sufixo extensao
+	-->
+	
+	<property name="prefix" value="/WEB-INF/view/" />
+	<property name="suffix" value=".jsp" />
+		
+	
+	</bean>
+	
+	<!--  LIBERA RECURSOS ESTATICOS, CSS, JPEG, PNG, GIF -->
+	<mvc:default-servlet-handler/>
+</beans>
+
+<!--  PARA FAZER CONFIGURAÇÕES NO SPRING 	-->
